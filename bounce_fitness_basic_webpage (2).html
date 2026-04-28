@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bounce Fitness | Marketing & Communications Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: #003366;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      color: #003366;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    header h1 {
+      color: #003366;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #4da3ff;
+      color: white;
+      text-align: center;
+      padding: 90px 8%;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 750px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: white;
+      color: #4da3ff;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #8cc8ff;
+    }
+
+    section {
+      padding: 60px 8%;
+      background-color: white;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #4da3ff;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid #d9ecff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #4da3ff;
+      margin-bottom: 12px;
+    }
+
+    .offer {
+      background-color: white;
+      text-align: center;
+    }
+
+    .offer-box {
+      background: white;
+      border: 2px solid #4da3ff;
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 800px;
+      margin: 25px auto 0;
+    }
+
+    .contact {
+      background-color: #4da3ff;
+      color: white;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    footer {
+      background-color: white;
+      color: #003366;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+        width: 100%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="data:image/png;base64,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" alt="Bounce Fitness Logo" />
+      <h1>Bounce Fitness</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#offer">Special Offer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Helping Your Business Communicate, Connect and Grow</h2>
+    <p>
+      Bounce Fitness is excited to announce our new Marketing and Communications Services, designed to help businesses increase brand awareness, improve customer engagement and build stronger community connections.
+    </p>
+    <a href="#contact" class="btn">Contact Us Today</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Bounce Fitness</h2>
+    <p class="about">
+      Bounce Fitness is a leading fitness and wellness centre in Australia, with centres across different cities. After years of successfully managing our own marketing and communications, we are now offering our knowledge and experience to support other businesses.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Our Fitness Environment</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+        <p>Modern gym equipment</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+        <p>Professional training sessions</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=800&q=80" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+        <p>Friendly fitness community</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our New Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Marketing Strategy</h3>
+        <p>We help businesses plan effective marketing activities that support brand growth and customer engagement.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Content</h3>
+        <p>We create engaging social media content to help businesses reach wider audiences and communicate clearly.</p>
+      </div>
+      <div class="card">
+        <h3>Communication Planning</h3>
+        <p>We support businesses with clear, professional communication plans for clients and the wider community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="offer" class="offer">
+    <h2 class="section-title">Launch Promotion</h2>
+    <div class="offer-box">
+      <h3>Special Introductory Offer</h3>
+      <p>
+        To celebrate the launch of our new service, Bounce Fitness is offering a free initial consultation for businesses interested in improving their marketing and communication activities.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Email: marketing@bouncefitness.com.au</p>
+    <p>Phone: 1300 000 000</p>
+    <p>Website: www.bouncefitness.com.au</p>
+    <br />
+    <a href="mailto:marketing@bouncefitness.com.au" class="btn">Email Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bounce Fitness. All rights reserved.</p>
+  </footer>
+</body>
+</html>
